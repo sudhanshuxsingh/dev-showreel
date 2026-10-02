@@ -34,7 +34,7 @@ export const SignOff: React.FC = () => {
         ))}
         <Boil seed={804} style={{ textAlign: 'right' }}>
           <Rise t={t} at={b(4)} height={300} dur={0.3}>
-            <div style={{ ...serif, fontSize: 250, lineHeight: 1, color: K.red, letterSpacing: '-0.03em', paddingRight: 6 }}>remember.</div>
+            <div style={{ ...serif, fontSize: 250, lineHeight: 1, color: K.blue, letterSpacing: '-0.03em', paddingRight: 6 }}>remember.</div>
           </Rise>
         </Boil>
       </div>

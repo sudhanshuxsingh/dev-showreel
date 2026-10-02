@@ -160,7 +160,7 @@ export const Rag: React.FC = () => {
     <AbsoluteFill style={{ background: K.navy }}>
       <Numeral t={t} n="02" color="rgba(239,239,234,0.2)" />
       <div style={{ position: 'absolute', left: X, top: 330, width: COL }}>
-        <Kicker t={t} at={0} color={K.paperSoft}>02 — Retrieval-augmented generation</Kicker>
+        <Kicker t={t} at={0} color={K.paperSoft}>02 — Retrieval &amp; search</Kicker>
         <Boil seed={201} style={{ marginTop: 22 }}>
           <Rise t={t} at={0.05} height={slot('RAG', 125) * 0.62} dur={0.25}>
             <FitWord word="RAG" wdth={125} color={K.paper} size={fit('RAG', 125, COL) * 0.62} />
@@ -240,7 +240,7 @@ export const Interfaces: React.FC = () => {
             overflow: 'hidden',
           }}
         >
-          {morph === 0 && <span style={{ ...display(100, 700), fontSize: 54, color: K.paper }}>Generate ✦</span>}
+          {morph === 0 && <span style={{ ...display(100, 700), fontSize: 54, color: K.paper }}>Publish</span>}
           {morph > 0.9 && !done && (
             <svg width={90} height={90} style={{ transform: `rotate(${Math.round(spin * 4) * 45}deg)` }}>
               <circle cx={45} cy={45} r={34} fill="none" stroke="rgba(239,239,234,0.25)" strokeWidth={9} />
@@ -254,7 +254,7 @@ export const Interfaces: React.FC = () => {
           )}
           {expand > 0 && (
             <div style={{ width: '100%', height: '100%', padding: 44, boxSizing: 'border-box', opacity: expand >= 1 ? 1 : 0 }}>
-              <div style={{ ...mono, fontSize: 20, color: K.paperSoft }}>Generated · 0.8s</div>
+              <div style={{ ...mono, fontSize: 20, color: K.paperSoft }}>Published · just now</div>
               <div style={{ ...display(100, 800), fontSize: 64, color: K.paper, marginTop: 18, lineHeight: 1 }}>A calmer week.</div>
               {[0.92, 0.7, 0.8].map((k, i) => (
                 <div key={i} style={{ height: 22, width: `${k * 100}%`, borderRadius: 11, background: i === 0 ? K.blue : 'rgba(239,239,234,0.22)', marginTop: 26 }} />
