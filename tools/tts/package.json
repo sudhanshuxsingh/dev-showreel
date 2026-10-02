@@ -1,0 +1,10 @@
+{
+  "name": "showreel-tts",
+  "private": true,
+  "type": "module",
+  "description": "Isolated local TTS (Kokoro-82M via kokoro-js). Safe to delete after generating the voiceover.",
+  "dependencies": {
+    "kokoro-js": "1.2.1",
+    "phonemizer": "1.2.1"
+  }
+}

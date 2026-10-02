@@ -1,0 +1,65 @@
+{
+  "name": {
+    "file": "vo2/name.wav",
+    "duration": 1.113,
+    "speechStart": 0.02,
+    "speechEnd": 0.97,
+    "segments": [
+      [
+        0.02,
+        0.97
+      ]
+    ],
+    "words": [
+      {
+        "w": "I'm",
+        "s": 0.02,
+        "e": 0.258
+      },
+      {
+        "w": "Sudhanshu.",
+        "s": 0.258,
+        "e": 0.97
+      }
+    ]
+  },
+  "signoff": {
+    "file": "vo2/signoff.wav",
+    "duration": 2.014,
+    "speechStart": 0.02,
+    "speechEnd": 1.88,
+    "segments": [
+      [
+        0.02,
+        1.88
+      ]
+    ],
+    "words": [
+      {
+        "w": "Let's",
+        "s": 0.02,
+        "e": 0.279
+      },
+      {
+        "w": "build",
+        "s": 0.279,
+        "e": 0.585
+      },
+      {
+        "w": "something",
+        "s": 0.585,
+        "e": 1.079
+      },
+      {
+        "w": "people",
+        "s": 1.079,
+        "e": 1.433
+      },
+      {
+        "w": "remember.",
+        "s": 1.433,
+        "e": 1.88
+      }
+    ]
+  }
+}

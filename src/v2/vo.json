@@ -1,0 +1,9 @@
+{
+  "$comment": "v2 voiceover: two lines only. `say` is the phonetic spelling for TTS. Regenerate: pnpm v2:vo",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": {
+    "name": { "text": "I'm Sudhanshu.", "say": "I'm Sudhaanshu." },
+    "signoff": { "text": "Let's build something people remember.", "say": "Let's build something people remember." }
+  }
+}

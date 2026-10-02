@@ -1,0 +1,865 @@
+{
+  "fps": 30,
+  "durationInFrames": 2584,
+  "duration": 86.133,
+  "scenes": [
+    {
+      "id": "cold-open",
+      "from": 0,
+      "durationInFrames": 270,
+      "start": 0,
+      "duration": 9,
+      "vo": null
+    },
+    {
+      "id": "title",
+      "from": 270,
+      "durationInFrames": 102,
+      "start": 9,
+      "duration": 3.4,
+      "vo": null
+    },
+    {
+      "id": "arrival",
+      "from": 372,
+      "durationInFrames": 274,
+      "start": 12.4,
+      "duration": 9.133333333333333,
+      "vo": {
+        "id": "arrival",
+        "file": "vo/arrival.wav",
+        "start": 14.9,
+        "duration": 6.018,
+        "text": "Hi, I'm Sudhanshu — a full-stack Gen-AI developer who obsesses over how things feel.",
+        "words": [
+          {
+            "w": "Hi,",
+            "s": 0.02,
+            "e": 1.25
+          },
+          {
+            "w": "I'm",
+            "s": 1.76,
+            "e": 2.25
+          },
+          {
+            "w": "Sudhanshu",
+            "s": 2.25,
+            "e": 3.72
+          },
+          {
+            "w": "a",
+            "s": 3.99,
+            "e": 4.058
+          },
+          {
+            "w": "full-stack",
+            "s": 4.058,
+            "e": 4.343
+          },
+          {
+            "w": "Gen-AI",
+            "s": 4.343,
+            "e": 4.52
+          },
+          {
+            "w": "developer",
+            "s": 4.52,
+            "e": 4.805
+          },
+          {
+            "w": "who",
+            "s": 4.805,
+            "e": 4.927
+          },
+          {
+            "w": "obsesses",
+            "s": 4.927,
+            "e": 5.185
+          },
+          {
+            "w": "over",
+            "s": 5.185,
+            "e": 5.335
+          },
+          {
+            "w": "how",
+            "s": 5.335,
+            "e": 5.457
+          },
+          {
+            "w": "things",
+            "s": 5.457,
+            "e": 5.661
+          },
+          {
+            "w": "feel.",
+            "s": 5.661,
+            "e": 5.81
+          }
+        ],
+        "segments": [
+          [
+            0.02,
+            1.25
+          ],
+          [
+            1.76,
+            3.72
+          ],
+          [
+            3.99,
+            5.81
+          ]
+        ]
+      }
+    },
+    {
+      "id": "workflow",
+      "from": 646,
+      "durationInFrames": 99,
+      "start": 21.533333333333335,
+      "duration": 3.3,
+      "vo": {
+        "id": "workflow",
+        "file": "vo/workflow.wav",
+        "start": 21.883,
+        "duration": 1.261,
+        "text": "Here's how I work.",
+        "words": [
+          {
+            "w": "Here's",
+            "s": 0.04,
+            "e": 0.399
+          },
+          {
+            "w": "how",
+            "s": 0.399,
+            "e": 0.648
+          },
+          {
+            "w": "I",
+            "s": 0.648,
+            "e": 0.786
+          },
+          {
+            "w": "work.",
+            "s": 0.786,
+            "e": 1.09
+          }
+        ],
+        "segments": [
+          [
+            0.04,
+            1.09
+          ]
+        ]
+      }
+    },
+    {
+      "id": "think",
+      "from": 745,
+      "durationInFrames": 195,
+      "start": 24.833333333333332,
+      "duration": 6.5,
+      "vo": {
+        "id": "think",
+        "file": "vo/think.wav",
+        "start": 25.533,
+        "duration": 5.191,
+        "text": "It starts with the problem, not the prompt — who it's for, and where AI actually helps.",
+        "words": [
+          {
+            "w": "It",
+            "s": 0.01,
+            "e": 0.158
+          },
+          {
+            "w": "starts",
+            "s": 0.158,
+            "e": 0.476
+          },
+          {
+            "w": "with",
+            "s": 0.476,
+            "e": 0.709
+          },
+          {
+            "w": "the",
+            "s": 0.709,
+            "e": 0.9
+          },
+          {
+            "w": "problem,",
+            "s": 0.9,
+            "e": 1.261
+          },
+          {
+            "w": "not",
+            "s": 1.261,
+            "e": 1.451
+          },
+          {
+            "w": "the",
+            "s": 1.451,
+            "e": 1.642
+          },
+          {
+            "w": "prompt",
+            "s": 1.642,
+            "e": 1.96
+          },
+          {
+            "w": "who",
+            "s": 2.4,
+            "e": 2.672
+          },
+          {
+            "w": "it's",
+            "s": 2.672,
+            "e": 2.944
+          },
+          {
+            "w": "for,",
+            "s": 2.944,
+            "e": 3.216
+          },
+          {
+            "w": "and",
+            "s": 3.216,
+            "e": 3.488
+          },
+          {
+            "w": "where",
+            "s": 3.488,
+            "e": 3.881
+          },
+          {
+            "w": "AI",
+            "s": 3.881,
+            "e": 4.093
+          },
+          {
+            "w": "actually",
+            "s": 4.093,
+            "e": 4.667
+          },
+          {
+            "w": "helps.",
+            "s": 4.667,
+            "e": 5.06
+          }
+        ],
+        "segments": [
+          [
+            0.01,
+            1.96
+          ],
+          [
+            2.4,
+            5.06
+          ]
+        ]
+      }
+    },
+    {
+      "id": "design",
+      "from": 940,
+      "durationInFrames": 237,
+      "start": 31.333333333333332,
+      "duration": 7.9,
+      "vo": {
+        "id": "design",
+        "file": "vo/design.wav",
+        "start": 32.033,
+        "duration": 6.61,
+        "text": "Then I design the system, not just the screens. Type, spacing, motion — every pixel earns its place.",
+        "words": [
+          {
+            "w": "Then",
+            "s": 0.01,
+            "e": 0.286
+          },
+          {
+            "w": "I",
+            "s": 0.286,
+            "e": 0.411
+          },
+          {
+            "w": "design",
+            "s": 0.411,
+            "e": 0.787
+          },
+          {
+            "w": "the",
+            "s": 0.787,
+            "e": 1.012
+          },
+          {
+            "w": "system,",
+            "s": 1.012,
+            "e": 1.388
+          },
+          {
+            "w": "not",
+            "s": 1.388,
+            "e": 1.613
+          },
+          {
+            "w": "just",
+            "s": 1.613,
+            "e": 1.889
+          },
+          {
+            "w": "the",
+            "s": 1.889,
+            "e": 2.114
+          },
+          {
+            "w": "screens.",
+            "s": 2.114,
+            "e": 2.54
+          },
+          {
+            "w": "Type,",
+            "s": 2.99,
+            "e": 3.366
+          },
+          {
+            "w": "spacing,",
+            "s": 3.366,
+            "e": 3.947
+          },
+          {
+            "w": "motion",
+            "s": 3.947,
+            "e": 4.46
+          },
+          {
+            "w": "every",
+            "s": 4.87,
+            "e": 5.215
+          },
+          {
+            "w": "pixel",
+            "s": 5.215,
+            "e": 5.56
+          },
+          {
+            "w": "earns",
+            "s": 5.56,
+            "e": 5.906
+          },
+          {
+            "w": "its",
+            "s": 5.906,
+            "e": 6.145
+          },
+          {
+            "w": "place.",
+            "s": 6.145,
+            "e": 6.49
+          }
+        ],
+        "segments": [
+          [
+            0.01,
+            2.54
+          ],
+          [
+            2.99,
+            4.46
+          ],
+          [
+            4.87,
+            6.49
+          ]
+        ]
+      }
+    },
+    {
+      "id": "build",
+      "from": 1177,
+      "durationInFrames": 229,
+      "start": 39.233333333333334,
+      "duration": 7.633333333333334,
+      "vo": {
+        "id": "build",
+        "file": "vo/build.wav",
+        "start": 39.933,
+        "duration": 5.931,
+        "text": "I build end to end — React and Next.js up front, typed APIs underneath.",
+        "words": [
+          {
+            "w": "I",
+            "s": 0.01,
+            "e": 0.153
+          },
+          {
+            "w": "build",
+            "s": 0.153,
+            "e": 0.525
+          },
+          {
+            "w": "end",
+            "s": 0.525,
+            "e": 0.782
+          },
+          {
+            "w": "to",
+            "s": 0.782,
+            "e": 0.983
+          },
+          {
+            "w": "end",
+            "s": 0.983,
+            "e": 1.24
+          },
+          {
+            "w": "React",
+            "s": 1.72,
+            "e": 2.162
+          },
+          {
+            "w": "and",
+            "s": 2.162,
+            "e": 2.469
+          },
+          {
+            "w": "Next.js",
+            "s": 2.469,
+            "e": 2.979
+          },
+          {
+            "w": "up",
+            "s": 2.979,
+            "e": 3.218
+          },
+          {
+            "w": "front,",
+            "s": 3.218,
+            "e": 3.66
+          },
+          {
+            "w": "typed",
+            "s": 3.99,
+            "e": 4.485
+          },
+          {
+            "w": "APIs",
+            "s": 4.485,
+            "e": 4.904
+          },
+          {
+            "w": "underneath.",
+            "s": 4.904,
+            "e": 5.78
+          }
+        ],
+        "segments": [
+          [
+            0.01,
+            1.24
+          ],
+          [
+            1.72,
+            3.66
+          ],
+          [
+            3.99,
+            5.78
+          ]
+        ]
+      }
+    },
+    {
+      "id": "intelligence",
+      "from": 1406,
+      "durationInFrames": 268,
+      "start": 46.86666666666667,
+      "duration": 8.933333333333334,
+      "vo": {
+        "id": "intelligence",
+        "file": "vo/intelligence.wav",
+        "start": 47.567,
+        "duration": 7.344,
+        "text": "Then I make it think: RAG over your data, agents that use tools, answers that stream in real time.",
+        "words": [
+          {
+            "w": "Then",
+            "s": 0.02,
+            "e": 0.238
+          },
+          {
+            "w": "I",
+            "s": 0.238,
+            "e": 0.337
+          },
+          {
+            "w": "make",
+            "s": 0.337,
+            "e": 0.554
+          },
+          {
+            "w": "it",
+            "s": 0.554,
+            "e": 0.693
+          },
+          {
+            "w": "think:",
+            "s": 0.693,
+            "e": 0.95
+          },
+          {
+            "w": "RAG",
+            "s": 1.5,
+            "e": 1.847
+          },
+          {
+            "w": "over",
+            "s": 1.847,
+            "e": 2.271
+          },
+          {
+            "w": "your",
+            "s": 2.271,
+            "e": 2.696
+          },
+          {
+            "w": "data,",
+            "s": 2.696,
+            "e": 3.12
+          },
+          {
+            "w": "agents",
+            "s": 3.44,
+            "e": 3.89
+          },
+          {
+            "w": "that",
+            "s": 3.89,
+            "e": 4.22
+          },
+          {
+            "w": "use",
+            "s": 4.22,
+            "e": 4.49
+          },
+          {
+            "w": "tools,",
+            "s": 4.49,
+            "e": 4.88
+          },
+          {
+            "w": "answers",
+            "s": 5.1,
+            "e": 5.584
+          },
+          {
+            "w": "that",
+            "s": 5.584,
+            "e": 5.897
+          },
+          {
+            "w": "stream",
+            "s": 5.897,
+            "e": 6.324
+          },
+          {
+            "w": "in",
+            "s": 6.324,
+            "e": 6.524
+          },
+          {
+            "w": "real",
+            "s": 6.524,
+            "e": 6.837
+          },
+          {
+            "w": "time.",
+            "s": 6.837,
+            "e": 7.15
+          }
+        ],
+        "segments": [
+          [
+            0.02,
+            0.95
+          ],
+          [
+            1.5,
+            3.12
+          ],
+          [
+            3.44,
+            4.88
+          ],
+          [
+            5.1,
+            7.15
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ship",
+      "from": 1674,
+      "durationInFrames": 210,
+      "start": 55.8,
+      "duration": 7,
+      "vo": {
+        "id": "ship",
+        "file": "vo/ship.wav",
+        "start": 56.5,
+        "duration": 4.816,
+        "text": "Every answer gets traced and evaluated. Then I ship, measure, and polish.",
+        "words": [
+          {
+            "w": "Every",
+            "s": 0.01,
+            "e": 0.364
+          },
+          {
+            "w": "answer",
+            "s": 0.364,
+            "e": 0.773
+          },
+          {
+            "w": "gets",
+            "s": 0.773,
+            "e": 1.073
+          },
+          {
+            "w": "traced",
+            "s": 1.073,
+            "e": 1.482
+          },
+          {
+            "w": "and",
+            "s": 1.482,
+            "e": 1.728
+          },
+          {
+            "w": "evaluated.",
+            "s": 1.728,
+            "e": 2.3
+          },
+          {
+            "w": "Then",
+            "s": 2.79,
+            "e": 3.096
+          },
+          {
+            "w": "I",
+            "s": 3.096,
+            "e": 3.235
+          },
+          {
+            "w": "ship,",
+            "s": 3.235,
+            "e": 3.54
+          },
+          {
+            "w": "measure,",
+            "s": 3.54,
+            "e": 4.013
+          },
+          {
+            "w": "and",
+            "s": 4.013,
+            "e": 4.263
+          },
+          {
+            "w": "polish.",
+            "s": 4.263,
+            "e": 4.68
+          }
+        ],
+        "segments": [
+          [
+            0.01,
+            2.3
+          ],
+          [
+            2.79,
+            4.68
+          ]
+        ]
+      }
+    },
+    {
+      "id": "taste",
+      "from": 1884,
+      "durationInFrames": 214,
+      "start": 62.8,
+      "duration": 7.133333333333334,
+      "vo": {
+        "id": "taste",
+        "file": "vo/taste.wav",
+        "start": 63.2,
+        "duration": 4.146,
+        "text": "Because taste isn't decoration. It's a thousand small decisions.",
+        "words": [
+          {
+            "w": "Because",
+            "s": 0.01,
+            "e": 0.464
+          },
+          {
+            "w": "taste",
+            "s": 0.464,
+            "e": 0.812
+          },
+          {
+            "w": "isn't",
+            "s": 0.812,
+            "e": 1.105
+          },
+          {
+            "w": "decoration.",
+            "s": 1.105,
+            "e": 1.72
+          },
+          {
+            "w": "It's",
+            "s": 2.1,
+            "e": 2.357
+          },
+          {
+            "w": "a",
+            "s": 2.357,
+            "e": 2.499
+          },
+          {
+            "w": "thousand",
+            "s": 2.499,
+            "e": 3.041
+          },
+          {
+            "w": "small",
+            "s": 3.041,
+            "e": 3.411
+          },
+          {
+            "w": "decisions.",
+            "s": 3.411,
+            "e": 4.01
+          }
+        ],
+        "segments": [
+          [
+            0.01,
+            1.72
+          ],
+          [
+            2.1,
+            4.01
+          ]
+        ]
+      }
+    },
+    {
+      "id": "haki",
+      "from": 2098,
+      "durationInFrames": 258,
+      "start": 69.93333333333334,
+      "duration": 8.6,
+      "vo": {
+        "id": "haki",
+        "file": "vo/haki.wav",
+        "start": 72.333,
+        "duration": 3.404,
+        "text": "Gen-AI. Interfaces. Taste. That's my haki.",
+        "words": [
+          {
+            "w": "Gen-AI.",
+            "s": 0.02,
+            "e": 0.535
+          },
+          {
+            "w": "Interfaces.",
+            "s": 0.535,
+            "e": 1.445
+          },
+          {
+            "w": "Taste.",
+            "s": 1.445,
+            "e": 1.96
+          },
+          {
+            "w": "That's",
+            "s": 2.24,
+            "e": 2.651
+          },
+          {
+            "w": "my",
+            "s": 2.651,
+            "e": 2.872
+          },
+          {
+            "w": "haki.",
+            "s": 2.872,
+            "e": 3.22
+          }
+        ],
+        "segments": [
+          [
+            0.02,
+            1.96
+          ],
+          [
+            2.24,
+            3.22
+          ]
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "from": 2356,
+      "durationInFrames": 228,
+      "start": 78.53333333333333,
+      "duration": 7.6,
+      "vo": {
+        "id": "outro",
+        "file": "vo/outro.wav",
+        "start": 79.733,
+        "duration": 2.041,
+        "text": "Let's build something people remember.",
+        "words": [
+          {
+            "w": "Let's",
+            "s": 0.02,
+            "e": 0.279
+          },
+          {
+            "w": "build",
+            "s": 0.279,
+            "e": 0.585
+          },
+          {
+            "w": "something",
+            "s": 0.585,
+            "e": 1.079
+          },
+          {
+            "w": "people",
+            "s": 1.079,
+            "e": 1.433
+          },
+          {
+            "w": "remember.",
+            "s": 1.433,
+            "e": 1.88
+          }
+        ],
+        "segments": [
+          [
+            0.02,
+            1.88
+          ]
+        ]
+      }
+    }
+  ]
+}

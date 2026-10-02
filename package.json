@@ -1,0 +1,52 @@
+{
+  "name": "sudhanshu-showreel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vertical cinematic showreel for Sudhanshu Singh \u2014 built with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "assets": "node scripts/build-assets.mjs",
+    "assets:images": "node scripts/build-images.mjs",
+    "assets:sfx": "node scripts/gen-sfx.mjs",
+    "assets:vo": "node tools/tts/gen-vo.mjs",
+    "assets:timeline": "node scripts/build-timeline.mjs",
+    "assets:bed": "node scripts/gen-bed.mjs",
+    "render": "node scripts/render.mjs",
+    "still": "remotion still Showreel",
+    "cover": "remotion still Cover out/cover.png",
+    "typecheck": "tsc --noEmit",
+    "assets:tts-install": "pnpm --dir tools/tts install",
+    "format": "prettier --write src scripts tools/tts/gen-vo.mjs",
+    "qa:stills": "node scripts/stills.mjs",
+    "qa:audio": "node scripts/audio-qa.mjs",
+    "render:raw": "remotion render Showreel out/showreel-raw.mp4",
+    "master": "node scripts/master.mjs",
+    "render:no-music": "node scripts/render.mjs --props={\"withMusic\":false}",
+    "music:beats": "node scripts/beat-track.mjs",
+    "music:edit": "node scripts/music-edit.mjs",
+    "remix": "node scripts/remix.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "@remotion/layout-utils": "4.0.532",
+    "@remotion/motion-blur": "4.0.532",
+    "@remotion/noise": "4.0.532",
+    "@remotion/paths": "4.0.532",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "prettier": "3",
+    "sharp": "^0.35.5",
+    "typescript": "^5.9.0"
+  },
+  "packageManager": "pnpm@9.14.4"
+}

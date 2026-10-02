@@ -1,0 +1,150 @@
+{
+  "whoosh": {
+    "duration": 1.635,
+    "base": 0.78
+  },
+  "whoosh-fast": {
+    "duration": 0.919,
+    "base": 0.886
+  },
+  "whoosh-deep": {
+    "duration": 2.265,
+    "base": 0.428
+  },
+  "swish": {
+    "duration": 0.546,
+    "base": 1
+  },
+  "impact": {
+    "duration": 6.207,
+    "base": 0.416
+  },
+  "impact-soft": {
+    "duration": 3.404,
+    "base": 0.417
+  },
+  "kick": {
+    "duration": 0.7,
+    "base": 0.341
+  },
+  "slam": {
+    "duration": 3.058,
+    "base": 0.476
+  },
+  "braam": {
+    "duration": 7.36,
+    "base": 0.598
+  },
+  "sub-drop": {
+    "duration": 2.6,
+    "base": 0.25
+  },
+  "riser": {
+    "duration": 4.163,
+    "base": 0.932
+  },
+  "riser-short": {
+    "duration": 2.643,
+    "base": 1
+  },
+  "reverse-swell": {
+    "duration": 1.6,
+    "base": 0.683
+  },
+  "powerup": {
+    "duration": 4.118,
+    "base": 0.499
+  },
+  "rumble": {
+    "duration": 4.5,
+    "base": 0.386
+  },
+  "zap": {
+    "duration": 1.111,
+    "base": 1
+  },
+  "thunder": {
+    "duration": 5.046,
+    "base": 0.502
+  },
+  "glitch-1": {
+    "duration": 0.45,
+    "base": 0.812
+  },
+  "glitch-2": {
+    "duration": 0.3,
+    "base": 0.657
+  },
+  "glitch-3": {
+    "duration": 0.6,
+    "base": 0.618
+  },
+  "click": {
+    "duration": 0.25,
+    "base": 1
+  },
+  "tick": {
+    "duration": 0.06,
+    "base": 1
+  },
+  "pop": {
+    "duration": 0.528,
+    "base": 0.88
+  },
+  "pop-hi": {
+    "duration": 0.524,
+    "base": 0.845
+  },
+  "toggle": {
+    "duration": 0.125,
+    "base": 0.982
+  },
+  "blip": {
+    "duration": 0.05,
+    "base": 0.274
+  },
+  "dialog-open": {
+    "duration": 0.831,
+    "base": 0.559
+  },
+  "step": {
+    "duration": 0.13,
+    "base": 0.578
+  },
+  "notify": {
+    "duration": 1.277,
+    "base": 0.463
+  },
+  "success": {
+    "duration": 2.173,
+    "base": 0.572
+  },
+  "chime": {
+    "duration": 3.271,
+    "base": 0.445
+  },
+  "shimmer": {
+    "duration": 2.738,
+    "base": 0.742
+  },
+  "sparkle": {
+    "duration": 1.506,
+    "base": 0.655
+  },
+  "scan": {
+    "duration": 1.341,
+    "base": 1
+  },
+  "compute": {
+    "duration": 0.792,
+    "base": 1
+  },
+  "typing-3s": {
+    "duration": 3.257,
+    "base": 1
+  },
+  "typing-6s": {
+    "duration": 6.229,
+    "base": 1
+  }
+}

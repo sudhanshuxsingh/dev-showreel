@@ -1,0 +1,132 @@
+{
+  "$comment": "Single source of truth for the voiceover and scene pacing. `text` is shown as captions; `say` is what the TTS reads (phonetic spellings). Scene length = max(min, lead + voice + tail). Edit, then run `pnpm assets:vo && pnpm assets:timeline && pnpm assets:bed`.",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "cold-open",
+      "min": 9.0
+    },
+    {
+      "id": "title",
+      "min": 3.4
+    },
+    {
+      "id": "arrival",
+      "vo": "arrival",
+      "lead": 2.5,
+      "tail": 0.6,
+      "min": 8
+    },
+    {
+      "id": "workflow",
+      "vo": "workflow",
+      "lead": 0.35,
+      "tail": 1.4,
+      "min": 3.3
+    },
+    {
+      "id": "think",
+      "vo": "think",
+      "lead": 0.7,
+      "tail": 0.6,
+      "min": 6.4
+    },
+    {
+      "id": "design",
+      "vo": "design",
+      "lead": 0.7,
+      "tail": 0.6,
+      "min": 7
+    },
+    {
+      "id": "build",
+      "vo": "build",
+      "lead": 0.7,
+      "tail": 1.0,
+      "min": 6.8
+    },
+    {
+      "id": "intelligence",
+      "vo": "intelligence",
+      "lead": 0.7,
+      "tail": 0.9,
+      "min": 8
+    },
+    {
+      "id": "ship",
+      "vo": "ship",
+      "lead": 0.7,
+      "tail": 1.4,
+      "min": 7
+    },
+    {
+      "id": "taste",
+      "vo": "taste",
+      "lead": 0.4,
+      "tail": 2.6,
+      "min": 7
+    },
+    {
+      "id": "haki",
+      "vo": "haki",
+      "lead": 2.4,
+      "tail": 2.0,
+      "min": 8.6
+    },
+    {
+      "id": "outro",
+      "vo": "outro",
+      "lead": 1.2,
+      "tail": 4.2,
+      "min": 7.6
+    }
+  ],
+  "lines": {
+    "arrival": {
+      "text": "Hi, I'm Sudhanshu — a full-stack Gen-AI developer who obsesses over how things feel.",
+      "say": "Hi, I'm Sudhaanshu. A full-stack Gen-AI developer, who obsesses over how things feel."
+    },
+    "workflow": {
+      "text": "Here's how I work.",
+      "say": "Here's how I work."
+    },
+    "think": {
+      "text": "It starts with the problem, not the prompt — who it's for, and where AI actually helps.",
+      "say": "It starts with the problem, not the prompt. Who it's for, and where AI actually helps."
+    },
+    "design": {
+      "text": "Then I design the system, not just the screens. Type, spacing, motion — every pixel earns its place.",
+      "say": "Then I design the system, not just the screens. Type, spacing, motion. Every pixel earns its place."
+    },
+    "build": {
+      "text": "I build end to end — React and Next.js up front, typed APIs underneath.",
+      "say": "I build end to end. React and Next J S up front, typed APIs underneath."
+    },
+    "intelligence": {
+      "text": "Then I make it think: RAG over your data, agents that use tools, answers that stream in real time.",
+      "say": "Then I make it think. RAG over your data, agents that use tools, answers that stream in real time."
+    },
+    "ship": {
+      "text": "Every answer gets traced and evaluated. Then I ship, measure, and polish.",
+      "say": "Every answer gets traced, and evaluated. Then I ship, measure, and polish."
+    },
+    "taste": {
+      "text": "Because taste isn't decoration. It's a thousand small decisions.",
+      "say": "Because taste isn't decoration. It's a thousand small decisions."
+    },
+    "haki": {
+      "text": "Gen-AI. Interfaces. Taste. That's my haki.",
+      "say": "Gen-AI. Interfaces. Taste. That's my hah-kee."
+    },
+    "outro": {
+      "text": "Let's build something people remember.",
+      "say": "Let's build something people remember."
+    }
+  },
+  "music": {
+    "start": 0,
+    "targetRmsDb": -17
+  }
+}

@@ -1,0 +1,19 @@
+node_modules
+out
+.DS_Store
+.remotion
+scripts/.cache
+# The music track is copyrighted and user-supplied; never commit it.
+public/audio/music.*
+# Derived from the copyrighted track
+public/audio/music-edit.wav
+# The source copy of the song is copyrighted too
+assets-src/tempe-imphal
+# Local TTS tool deps + model cache (reinstall with `pnpm assets:tts-install`)
+tools/tts/node_modules
+# Working notes, not part of the project
+PLAN.md
+CLAUDE.md
+DESIGN.md
+PRODUCT.md
+.claude/

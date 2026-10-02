@@ -1,0 +1,268 @@
+{
+  "body": {
+    "width": 398,
+    "height": 500,
+    "anchorX": 199,
+    "anchorY": 477,
+    "figureHeight": 464,
+    "frames": [
+      "idle-a",
+      "idle-b",
+      "walk-1",
+      "walk-2",
+      "walk-3",
+      "walk-4",
+      "haki-a",
+      "haki-b"
+    ]
+  },
+  "faces": {
+    "width": 149,
+    "height": 176,
+    "frames": [
+      {
+        "name": "neutral",
+        "file": "sprites/face-01-neutral.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "serious",
+        "file": "sprites/face-02-serious.png",
+        "dx": 0,
+        "dy": 0,
+        "score": 1688
+      },
+      {
+        "name": "happy",
+        "file": "sprites/face-03-happy.png",
+        "dx": 2,
+        "dy": 0,
+        "score": 1353
+      },
+      {
+        "name": "smile",
+        "file": "sprites/face-04-smile.png",
+        "dx": 3,
+        "dy": 0,
+        "score": 1401
+      },
+      {
+        "name": "angry",
+        "file": "sprites/face-05-angry.png",
+        "dx": 4,
+        "dy": 2,
+        "score": 4579
+      },
+      {
+        "name": "focused",
+        "file": "sprites/face-06-focused.png",
+        "dx": 3,
+        "dy": 1,
+        "score": 4178
+      },
+      {
+        "name": "suspicious",
+        "file": "sprites/face-07-suspicious.png",
+        "dx": 1,
+        "dy": 1,
+        "score": 2366
+      },
+      {
+        "name": "surprised",
+        "file": "sprites/face-08-surprised.png",
+        "dx": 2,
+        "dy": 0,
+        "score": 3640
+      },
+      {
+        "name": "talk-1",
+        "file": "sprites/face-09-talk-1.png",
+        "dx": 1,
+        "dy": -2,
+        "score": 2006
+      },
+      {
+        "name": "talk-2",
+        "file": "sprites/face-10-talk-2.png",
+        "dx": 1,
+        "dy": -1,
+        "score": 1646
+      },
+      {
+        "name": "talk-3",
+        "file": "sprites/face-11-talk-3.png",
+        "dx": -1,
+        "dy": 1,
+        "score": 1610
+      },
+      {
+        "name": "talk-4",
+        "file": "sprites/face-12-talk-4.png",
+        "dx": 2,
+        "dy": -2,
+        "score": 4992
+      },
+      {
+        "name": "left-neutral",
+        "file": "sprites/face-13-left-neutral.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "left-serious",
+        "file": "sprites/face-14-left-serious.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "left-smile",
+        "file": "sprites/face-15-left-smile.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "left-angry",
+        "file": "sprites/face-16-left-angry.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "right-neutral",
+        "file": "sprites/face-17-right-neutral.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "right-serious",
+        "file": "sprites/face-18-right-serious.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "right-smile",
+        "file": "sprites/face-19-right-smile.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "right-angry",
+        "file": "sprites/face-20-right-angry.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "look-up",
+        "file": "sprites/face-21-look-up.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "look-down",
+        "file": "sprites/face-22-look-down.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "blink",
+        "file": "sprites/face-23-blink.png",
+        "dx": 4,
+        "dy": -3,
+        "score": 7059
+      },
+      {
+        "name": "wink",
+        "file": "sprites/face-24-wink.png",
+        "dx": 0,
+        "dy": -1,
+        "score": 6444
+      },
+      {
+        "name": "haki-idle",
+        "file": "sprites/face-25-haki-idle.png",
+        "dx": 1,
+        "dy": 7,
+        "score": 11340
+      },
+      {
+        "name": "haki-intense",
+        "file": "sprites/face-26-haki-intense.png",
+        "dx": 1,
+        "dy": 4,
+        "score": 10296
+      },
+      {
+        "name": "haki-eye-glow",
+        "file": "sprites/face-27-haki-eye-glow.png",
+        "dx": 2,
+        "dy": 4,
+        "score": 11812
+      },
+      {
+        "name": "haki-rage",
+        "file": "sprites/face-28-haki-rage.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "haki-side-1",
+        "file": "sprites/face-29-haki-side-1.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "haki-side-2",
+        "file": "sprites/face-30-haki-side-2.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "haki-down",
+        "file": "sprites/face-31-haki-down.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "haki-up",
+        "file": "sprites/face-32-haki-up.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "eyes-closed",
+        "file": "sprites/face-33-eyes-closed.png",
+        "dx": 1,
+        "dy": 7,
+        "score": 10082
+      },
+      {
+        "name": "shadow",
+        "file": "sprites/face-34-shadow.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "profile-left",
+        "file": "sprites/face-35-profile-left.png",
+        "dx": 0,
+        "dy": 0
+      },
+      {
+        "name": "profile-right",
+        "file": "sprites/face-36-profile-right.png",
+        "dx": 0,
+        "dy": 0
+      }
+    ]
+  },
+  "hakiFace": {
+    "width": 250,
+    "height": 340,
+    "frames": 8
+  },
+  "grain": {
+    "width": 600,
+    "height": 1080,
+    "tiles": 6
+  }
+}
