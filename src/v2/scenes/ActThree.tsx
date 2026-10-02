@@ -34,7 +34,7 @@ export const SignOff: React.FC = () => {
         ))}
         <Boil seed={804} style={{ textAlign: 'right' }}>
           <Rise t={t} at={b(4)} height={300} dur={0.3}>
-            <div style={{ ...serif, fontSize: 250, lineHeight: 1, color: K.blue, letterSpacing: '-0.03em', paddingRight: 6 }}>remember.</div>
+            <div style={{ ...serif, fontSize: 250, lineHeight: 1, color: K.red, letterSpacing: '-0.03em', paddingRight: 6 }}>remember.</div>
           </Rise>
         </Boil>
       </div>
@@ -74,6 +74,35 @@ function boltPath(x1: number, y1: number, x2: number, y2: number, seed: number) 
 }
 
 const RULE = 1040;
+
+/** Ground cracks splitting out from (cx, cy) — fixed shape, revealed by `k`. */
+function Cracks({ k, cx, cy }: { k: number; cx: number; cy: number }) {
+  const arms = [
+    { a: Math.PI + 0.16, len: 470 },
+    { a: Math.PI + 0.4, len: 330 },
+    { a: Math.PI + 0.7, len: 230 },
+    { a: -0.16, len: 470 },
+    { a: -0.4, len: 340 },
+    { a: -0.7, len: 240 },
+    { a: Math.PI + 1.25, len: 160 },
+    { a: -1.3, len: 170 },
+  ];
+  return (
+    <svg width={1080} height={1920} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+      {arms.map((arm, i) => {
+        const r = arm.len * k;
+        if (r < 4) return null;
+        const d = boltPath(cx + Math.cos(arm.a) * 40, cy - 8, cx + Math.cos(arm.a) * r, cy - 8 + Math.sin(arm.a) * r * 0.55, 400 + i);
+        return (
+          <g key={i}>
+            <path d={d} stroke="rgba(242,34,43,0.55)" strokeWidth={7} fill="none" strokeLinejoin="bevel" />
+            <path d={d} stroke={K.ink} strokeWidth={2.2} fill="none" strokeLinejoin="bevel" />
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
 const CENTER = 540;
 
 /**
@@ -102,9 +131,21 @@ export const Lockup: React.FC = () => {
   const shake = (hash(exposure, 7) - 0.5) * 2 * (1 + 8 * burst) * (aura > 0 ? 1 : 0);
   const cy = RULE - 120; // middle of the figure at this scale
   const ring = t >= burstAt ? tween(t, [burstAt, burstAt + 0.55], [0, 1], ease.outExpo) : 0;
+  // The release leaves a mark on the room: a red cast creeping in from the
+  // edges while it charges, and cracks splitting the ground once it bursts.
+  const after = t >= burstAt ? held(tween(t, [burstAt, burstAt + 0.5], [0, 1], ease.outExpo), 5) : 0;
+  const cast = aura > 0 ? 0.1 * aura + 0.22 * after + (hash(exposure, 21) - 0.5) * 0.04 * aura : 0;
   return (
     <AbsoluteFill style={{ background: K.paper }}>
       <AbsoluteFill style={{ transform: `translate(${shake}px, ${shake * -0.6}px)` }}>
+        {cast > 0 && (
+          <AbsoluteFill
+            style={{
+              background: `radial-gradient(ellipse 75% 60% at ${CENTER}px ${cy}px, rgba(242,34,43,0) 30%, rgba(242,34,43,${cast.toFixed(3)}) 100%)`,
+            }}
+          />
+        )}
+        {after > 0 && <Cracks k={after} cx={CENTER} cy={RULE} />}
         <div style={{ position: 'absolute', left: X, top: 330, width: COL }}>
           <Boil seed={901}>
             <Rise t={t} at={0} height={slot('SUDHANSHU', 62)} dur={0.3}>
@@ -197,11 +238,41 @@ export const End: React.FC = () => {
   const light = tween(t, [0.15, 1.5], [-0.1, 0.62], ease.inOutCubic);
   const url = held(tween(t, [0.35, 0.55]), 2);
   const fadeOut = tween(t, [1.25, 1.65], [0, 1], ease.inOutCubic);
+  // The aftermath: the room still glows red and a few bolts keep crackling,
+  // dying away under the mark.
+  const exposure = Math.floor(t * 10);
+  const glow = (0.34 - 0.14 * tween(t, [0, 1.6])) * (1 + (hash(exposure, 31) - 0.5) * 0.25);
+  const crackle = 1 - tween(t, [0, 1.4]);
   return (
     <AbsoluteFill style={{ background: K.ink, alignItems: 'center', justifyContent: 'center' }}>
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 50% at 540px 960px, rgba(242,34,43,${glow.toFixed(3)}), rgba(242,34,43,0) 100%)` }} />
+      <AbsoluteFill style={{ boxShadow: `inset 0 0 260px rgba(242,34,43,${(glow * 0.9).toFixed(3)})` }} />
+      <svg width={1080} height={1920} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+        {Array.from({ length: 6 }, (_, i) => {
+          if (hash(exposure, i, 41) > crackle * 0.55) return null;
+          const a = (i / 6) * Math.PI * 2 + (hash(exposure, i, 42) - 0.5) * 0.8;
+          const r0 = 420 + hash(exposure, i, 43) * 80;
+          const r1 = r0 + 160 + hash(exposure, i, 44) * 140;
+          const d = boltPath(540 + Math.cos(a) * r0, 960 + Math.sin(a) * r0 * 1.4, 540 + Math.cos(a) * r1, 960 + Math.sin(a) * r1 * 1.4, exposure * 17 + i);
+          return (
+            <g key={i} opacity={0.5 + 0.5 * crackle}>
+              <path d={d} stroke={K.red} strokeWidth={5} fill="none" strokeLinejoin="bevel" />
+              <path d={d} stroke="#FFD9DB" strokeWidth={1.4} fill="none" strokeLinejoin="bevel" />
+            </g>
+          );
+        })}
+      </svg>
+      {Array.from({ length: 16 }, (_, i) => {
+        const life = 0.9 + hash(i, 53) * 0.7;
+        const ph = ((t + hash(i, 54) * life) % life) / life;
+        const x = 120 + hash(i, 55) * 840;
+        const y = 1500 - ph * (500 + hash(i, 56) * 400);
+        const sz = 4 + hash(i, 57) * 6;
+        return <div key={i} style={{ position: 'absolute', left: x, top: y, width: sz, height: sz, background: K.red, opacity: Math.sin(ph * Math.PI) * (1 - fadeOut) * 0.85 }} />;
+      })}
       <div style={{ opacity: 1 - fadeOut, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Boil seed={951} amount={0.6}>
-          <SSMark width={400} light={[light, 0.32]} lit={draw} draw={draw} accent={K.blue} />
+          <SSMark width={400} light={[light, 0.32]} lit={draw} draw={draw} accent={K.red} />
         </Boil>
         <div style={{ marginTop: 44, ...mono, fontSize: 26, letterSpacing: '0.2em', color: K.paper, opacity: url }}>sudhanshuxsingh.in</div>
       </div>

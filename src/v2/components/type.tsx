@@ -50,7 +50,8 @@ export function Rise({
   const y = (1 - inK) * from - outK * from;
   return (
     <div style={{ position: 'relative', height, overflow: 'hidden', ...style }}>
-      <div style={{ transform: `translateY(${y * 100}%)` }}>{children}</div>
+      {/* Offset by the slot or the content, whichever is taller, so nothing peeks in before it rises. */}
+      <div style={{ transform: `translateY(calc(${y} * max(100%, ${height}px)))` }}>{children}</div>
     </div>
   );
 }
